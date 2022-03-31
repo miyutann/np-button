@@ -1,0 +1,24 @@
+{
+  "name": "np-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takeshi-nishida/np-button.git"
+  },
+  "author": "Kaho Okamoto and Takeshi Nishida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takeshi-nishida/np-button/issues"
+  },
+  "homepage": "https://github.com/takeshi-nishida/np-button#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "socket.io": "^4.4.1"
+  }
+}

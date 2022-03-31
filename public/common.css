@@ -1,0 +1,129 @@
+html {
+    font-size: 62.5%;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3rem;
+    text-align:center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-width:200px;
+    font-size: 1.6rem;
+    -webkit-text-size-adjust : 100% ;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+}
+
+ul > li {
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    background: #e6f4ff;
+    color: #5c98d4;
+    font-weight: bold;
+    height: 20px;
+    min-width: 50px;
+    border-radius: 7px;
+  }
+
+ul > li:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e6f4ff;
+    width: 0;
+    height: 0;
+}
+
+ul > li p {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #6A91C1;
+    box-shadow: 0px 2px 2px 1px #CCCCCC;
+    border-bottom: solid 5px #516C8D;
+    -webkit-transition: none;
+    transition: none;
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: none;
+    position: relative;
+    border-bottom: none;
+    top: 7px;
+}
+
+.add-control .radio {
+    display: none;
+}
+
+#pbutton:checked ~ .btn-pbutton {
+    display: none;
+}
+
+#pbutton:checked ~ .btn-npbutton {
+    display: table;
+}
+
+#npbutton:checked ~ .btn-pbutton {
+    display: inline-block;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #EB902A;
+    box-shadow: 0px 2px 2px 1px #CCCCCC;
+    border-bottom: solid 5px #AB691F;
+    -webkit-transition: none;
+    transition: none;
+    color: #fff;
+}
+
+#npbutton:checked ~ .btn-pbutton:active {
+    box-shadow: none;
+    position: relative;
+    border-bottom: none;
+    top: 7px;
+}
+
+#npbutton:checked ~ .btn-npbutton {
+    display: none;
+}
+
+.comment {
+    margin-top: 40px;
+    background-color: #fff; /* 背景色 */
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #fff 50%, #fff 100%), /* 点線1の色 */
+                      linear-gradient(180deg, #ccc 1px, transparent 1px); /* 点線2の色と太さ */
+    background-size: 8px 100%, /* 点線1のサイズ */
+                     100% 2.0em; /* 点線2のサイズ */
+    line-height: 2.0em; /* 文字の高さ */
+    padding-bottom: 1px;
+   /* border: double 5px #5c98d4;*/
+    border-left: solid 10px #5bb7ae ;
+  }
