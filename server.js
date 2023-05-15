@@ -13,6 +13,8 @@ const io = new Server(server);
 const port = process.env.PORT || 8000;
 const MONGODB_URL = process.env.MONGODB_URL;
 
+console.log(MONGODB_URL);
+
 // ----------------------------------------------------------------------------
 // Data
 // ----------------------------------------------------------------------------
@@ -53,6 +55,7 @@ io.on('connection', (socket) => {
   socket.on('nickname', (name) => {
 
     Users.findOneAndUpdate({ name }, {}, { upsert: true, new: true }, (err, u) => {
+      console.log(err);
       console.log(name + ' loggedin.');
       onlineUsers.set(u.id, u);
       io.emit('UserList', buildUserlist());
