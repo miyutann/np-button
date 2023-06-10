@@ -18,6 +18,7 @@
   "homepage": "https://github.com/takeshi-nishida/np-button#readme",
   "dependencies": {
     "express": "^4.17.3",
+    "mongodb": "^5.6.0",
     "mongoose": "^6.11.1",
     "socket.io": "^4.4.1"
   }
